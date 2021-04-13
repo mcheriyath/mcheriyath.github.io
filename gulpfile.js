@@ -1,7 +1,8 @@
 "use strict";
 
 // Load plugins
-const autoprefixer = require("gulp-autoprefixer");
+const autoprefixer = require('autoprefixer')
+const postcss = require('gulp-postcss');
 const browsersync = require("browser-sync").create();
 const cleanCSS = require("gulp-clean-css");
 const del = require("del");
@@ -80,10 +81,7 @@ function css() {
       includePaths: "./node_modules",
     }))
     .on("error", sass.logError)
-    .pipe(autoprefixer({
-      browsers: ['last 2 versions'],
-      cascade: false
-    }))
+    .pipe(postcss([autoprefixer()]))
     .pipe(header(banner, {
       pkg: pkg
     }))

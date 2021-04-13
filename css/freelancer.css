@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Freelancer v5.0.3 (https://startbootstrap.com/template-overviews/freelancer)
- * Copyright 2013-2019 Start Bootstrap
+ * Copyright 2013-2021 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
  */
 
@@ -242,7 +242,6 @@ header.masthead h2 {
   margin: 1rem calc(1rem - 8px);
   position: relative;
   z-index: 2;
-  -webkit-box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5);
 }
 
@@ -287,7 +286,6 @@ header.masthead h2 {
   border: none;
   border-radius: 0;
   background: none;
-  -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
 

@@ -5,6 +5,19 @@
     "scripts": {
         "start": "gulp watch"
     },
+    "browserslist": [
+        "> 1%",
+        "ie >= 8",
+        "edge >= 15",
+        "ie_mob >= 10",
+        "ff >= 45",
+        "chrome >= 45",
+        "safari >= 7",
+        "opera >= 23",
+        "ios >= 7",
+        "android >= 4",
+        "bb >= 10"
+    ],
     "description": "A freelancer portfolio HTML theme for Bootstrap.",
     "keywords": [
         "css",
@@ -36,6 +49,7 @@
         "magnific-popup": "^1.1.0"
     },
     "devDependencies": {
+        "autoprefixer": "^9.7.3",
         "browser-sync": "^2.26.7",
         "del": "^3.0.0",
         "gulp": "4.0.0",
@@ -43,6 +57,7 @@
         "gulp-clean-css": "4.0.0",
         "gulp-header": "2.0.7",
         "gulp-plumber": "^1.2.1",
+        "gulp-postcss": "^8.0.0",
         "gulp-rename": "1.4.0",
         "gulp-sass": "4.0.2",
         "gulp-uglify": "3.0.1",
