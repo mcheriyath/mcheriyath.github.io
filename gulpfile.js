@@ -5,7 +5,7 @@ const autoprefixer = require('autoprefixer')
 const postcss = require('gulp-postcss');
 const browsersync = require("browser-sync").create();
 const cleanCSS = require("gulp-clean-css");
-const del = require("del");
+const { deleteAsync } = require("del");
 const gulp = require("gulp");
 const header = require("gulp-header");
 const merge = require("merge-stream");
@@ -44,8 +44,8 @@ function browserSyncReload(done) {
 }
 
 // Clean vendor
-function clean() {
-  return del(["./vendor/"]);
+async function clean() {
+  return await deleteAsync(["./vendor/"]);
 }
 
 // Bring third party dependencies from node_modules into vendor directory
