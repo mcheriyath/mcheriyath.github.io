@@ -67,4 +67,4 @@ To update the portfolio content:
 - Edit `index.html` for page structure and content
 - Update SCSS files in `/scss/` directory for styling changes 
 - Add or replace images in `/img/` directory
-- Run the build process after making changes
+- Run the build process after making changes.
