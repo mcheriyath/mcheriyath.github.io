@@ -20,8 +20,8 @@ const Navbar = () => {
         { name: 'Home', path: '/' },
         { name: 'Resume', path: '/resume' },
         { name: 'Certifications', path: '/certifications' },
-        { name: 'Portfolio', path: '/#portfolio' }, // Keep as anchor for home scroll or dedicated page? User asked for dedicated company pages. 
-        // Adjusting strategy: Portfolio on Home is good "featured work". Dedicated pages are "details". 
+        { name: 'Experience', path: '/#experience' },
+        { name: 'Portfolio', path: '/#portfolio' },
     ];
 
     // Helper to handle hash links if on specific page
