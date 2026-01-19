@@ -6,9 +6,12 @@ import Resume from './pages/Resume';
 import Certifications from './pages/Certifications';
 import ExperienceDetail from './pages/ExperienceDetail';
 
+import ScrollToTop from './components/ScrollToTop';
+
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
