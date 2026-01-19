@@ -13,12 +13,6 @@ export const certifications = [
         logo: "/certifications/aws-sa-pro.png"
     },
     {
-        title: "AWS Certified DevOps Engineer - Professional",
-        issuer: "Amazon Web Services",
-        date: "2021",
-        logo: "/certifications/aws-devops-pro.png"
-    },
-    {
         title: "AWS Certified Solutions Architect - Associate",
         issuer: "Amazon Web Services",
         date: "2018",
