@@ -3,7 +3,7 @@ title: "Zero Downtime Deployments with Kubernetes"
 date: "2024-01-10"
 category: "DevOps"
 tags: ["Kubernetes", "CI/CD", "ArgoCD"]
-image: "/portfolio/submarine.png"
+
 description: "Implementing rolling updates and blue-green deployments using Kubernetes and ArgoCD."
 ---
 

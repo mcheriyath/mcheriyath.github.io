@@ -58,8 +58,8 @@ const BlogList = () => {
                             key={category}
                             onClick={() => setSelectedCategory(category)}
                             className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${selectedCategory === category
-                                    ? 'bg-highlight text-white shadow-lg scale-105'
-                                    : 'glass text-gray-300 hover:text-white hover:bg-white/10'
+                                ? 'bg-highlight text-white shadow-lg scale-105'
+                                : 'glass text-gray-300 hover:text-white hover:bg-white/10'
                                 }`}
                         >
                             {category}
@@ -79,11 +79,17 @@ const BlogList = () => {
                             <Link to={`/blog/${post.slug}`} className="block glass rounded-2xl overflow-hidden hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 h-full flex flex-col group">
                                 <div className="h-48 overflow-hidden relative">
                                     <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent z-10" />
-                                    <img
-                                        src={post.image || '/vite.svg'}
-                                        alt={post.title}
-                                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                                    />
+                                    {post.image ? (
+                                        <img
+                                            src={post.image}
+                                            alt={post.title}
+                                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                        />
+                                    ) : (
+                                        <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 group-hover:scale-110 transition-transform duration-500 flex items-center justify-center">
+                                            <FaFolder className="text-4xl text-gray-600 opacity-50" />
+                                        </div>
+                                    )}
                                     <div className="absolute bottom-4 left-4 z-20">
                                         <span className="bg-highlight px-3 py-1 rounded text-xs font-bold text-white shadow-md">
                                             {post.category}
@@ -126,8 +132,8 @@ const BlogList = () => {
                                 key={i + 1}
                                 onClick={() => setCurrentPage(i + 1)}
                                 className={`w-10 h-10 rounded-full flex items-center justify-center transition-all ${currentPage === i + 1
-                                        ? 'bg-highlight text-white font-bold'
-                                        : 'glass text-gray-400 hover:bg-white/10'
+                                    ? 'bg-highlight text-white font-bold'
+                                    : 'glass text-gray-400 hover:bg-white/10'
                                     }`}
                             >
                                 {i + 1}

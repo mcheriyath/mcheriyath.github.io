@@ -3,7 +3,7 @@ title: "Mastering AWS Lambda Layers"
 date: "2024-02-20"
 category: "AWS"
 tags: ["Serverless", "Lambda", "Python"]
-image: "/portfolio/cake.png"
+
 description: "A comprehensive guide to optimizing your serverless functions using Lambda Layers."
 ---
 
