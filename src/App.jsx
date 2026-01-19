@@ -5,6 +5,8 @@ import Home from './pages/Home';
 import Resume from './pages/Resume';
 import Certifications from './pages/Certifications';
 import ExperienceDetail from './pages/ExperienceDetail';
+import BlogList from './pages/BlogList';
+import BlogPost from './pages/BlogPost';
 
 import ScrollToTop from './components/ScrollToTop';
 
@@ -18,6 +20,8 @@ function App() {
           <Route path="resume" element={<Resume />} />
           <Route path="certifications" element={<Certifications />} />
           <Route path="experience/:id" element={<ExperienceDetail />} />
+          <Route path="blog" element={<BlogList />} />
+          <Route path="blog/:slug" element={<BlogPost />} />
         </Route>
       </Routes>
     </Router>
