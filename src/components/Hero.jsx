@@ -61,7 +61,7 @@ const Hero = () => {
                     </h3>
 
                     <div className="mt-12 flex justify-center space-x-6">
-                        <a href="#portfolio" className="btn btn-primary">View My Work</a>
+                        <a href="#portfolio" onClick={(e) => { e.preventDefault(); document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' }); }} className="btn btn-primary">View My Work</a>
                         <a href={profile.links.resume} target="_blank" rel="noopener noreferrer" className="btn btn-outline">Download Resume</a>
                     </div>
                 </motion.div>
