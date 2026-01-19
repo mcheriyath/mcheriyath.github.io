@@ -56,7 +56,7 @@ const Hero = () => {
                         {profile.name}
                     </h1>
                     <h3 className="text-2xl md:text-4xl text-gray-300 h-16">
-                        I am a <span className="text-highlight">{displayText}</span>
+                        I am {/^[aeiou]/i.test(profile.roles[roleIndex]) ? 'an' : 'a'} <span className="text-highlight">{displayText}</span>
                         <span className="animate-pulse">|</span>
                     </h3>
 
