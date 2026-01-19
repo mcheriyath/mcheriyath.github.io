@@ -3,7 +3,7 @@ title: "Essential Linux Commands for DevOps"
 date: "2023-12-05"
 category: "Linux"
 tags: ["Bash", "Shell", "Terminal"]
-image: "/portfolio/safe.png"
+
 description: "A curated list of Linux commands that every DevOps engineer should know by heart."
 ---
 

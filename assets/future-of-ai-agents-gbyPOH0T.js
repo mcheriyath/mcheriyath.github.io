@@ -3,7 +3,7 @@ title: "The Future of AI Agents"
 date: "2024-03-15"
 category: "AI"
 tags: ["Generative AI", "LLM", "Agents"]
-image: "/portfolio/cabin.png"
+
 description: "Exploring how autonomous AI agents are reshaping software development and workflow automation."
 ---
 
